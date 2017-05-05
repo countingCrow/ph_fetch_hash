@@ -1,6 +1,5 @@
 # ph_fetch_hash
-Since I have never learned how to patch freebsd ports nor making php extensions,
-this is just a work around for me to fetch hash values out from php resources.
+Since I have never learned how to patch freebsd ports nor making php extensions, this is just a work around for me to fetch hash values out from php resources.
 
 # requirements
 PHP > 7
@@ -17,4 +16,5 @@ PHP > 7
 int ph_fetch_hash ( resource $phash_resource )
 
 # note
-11.0-RELEASE-p8; PHP 7.0.15; pHash-0.9.6; php-pHash-0.9.6_1;
+- 11.0-RELEASE-p8; PHP 7.0.15; pHash-0.9.6; php-pHash-0.9.6_1;
+- php-pHash-0.9.6_1 seem not supporting png, try convert to jpg first
