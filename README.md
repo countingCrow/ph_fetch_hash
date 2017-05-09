@@ -18,3 +18,7 @@ int ph_fetch_hash ( resource $phash_resource )
 # note
 - 11.0-RELEASE-p8; PHP 7.0.15; pHash-0.9.6; php-pHash-0.9.6_1;
 - php-pHash-0.9.6_1 seem not supporting png, try convert to jpg first
+- MySQL (SIGNED) BIGINT would be capable to store the return value
+- directly assign url for ph_dct_hash could silently failed when using it at cron script; one possibility is that missing environment variable path leading to curl will make 'it' (maybe CImg?) failed to fetch image back from internet
+- MySQL function BIT_COUNT could be handy to get hamming distance (http://stackoverflow.com/a/21058895)
+- if need to get hamming distance in php could use crow_count_bit_64, see count_bit.php
